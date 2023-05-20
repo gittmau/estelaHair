@@ -4,6 +4,10 @@
 
 .material-symbols-outlined {font-variation-settings:'FILL' 0,'wght' 600,'GRAD' 0,'opsz' 48;color:brown;font-weight: 600;font-size: 1.5rem;}
 
+html{scroll-behavior: smooth;}
+
+body{background: #f4f4f4}
+
 *{margin: 0;padding: 0;box-sizing: border-box}
 
 #topo{width: 100%;height:80px;background:linear-gradient(to left,#F9337E,#ABC8F8);position: fixed;top:0}
@@ -65,11 +69,29 @@
 
 ::-webkit-scrollbar-thumb{background:linear-gradient(to right,#F9337E,#ABC8F8);border-radius: 10px}
 
+
+/*Seção sobre------------------------*/
+
+#sobre{margin: 50px auto}
+
+
+#fotoSobre{width:280px;height:250px;background:#ccc;margin:auto;margin-top: 50px}
+
+#fotoSobre > img{width: 100%;height: 100%;}
+
+div#textoSobre{width:260px;margin: auto;margin-top:20px;background: ;font-family: 'Raleway', sans-serif;}
+
+#textoSobre > p{margin-top:20px;}
+
+#textoSobre > h3{text-align: center;}
+
+#bordaNome{width:20%;margin:10px auto;border: 1px solid #F9337E }
+
 footer{width: 100%;height:600px;background:#000;margin-top: 50px;display: flex;align-items: center;justify-content: space-evenly;flex-direction: column;}
 
 #imgLogo{width:100px;height:100px}
 
-#imgLogo > img{width: 100%;height: 100%}
+#imgLogo > img{width: 100%;height: 100%;}
 
 #lista-de-servicos li{color: #fff;font-family: 'Raleway', sans-serif;text-align:center;list-style: none;letter-spacing: 2px;line-height:1.5}
 
@@ -91,12 +113,33 @@ footer{width: 100%;height:600px;background:#000;margin-top: 50px;display: flex;a
 
 	#imgLogo{width:150px;height:150px}
 
+   #fotoSobre{width:375px;height:350px;}
+
+   div#textoSobre{width:360px}
+
 }
 
 
 @media(min-width:650px){
    
    #menu ul{width:40%}
+
+   #container{max-width:580px;}
+
+   #sobre{width: 100%}
+
+   #conteudoSobre{display: flex;background: #f4f4f4;align-items: center;justify-content:space-evenly;padding: 20px 0px}
+
+   #fotoSobre{width:33%;height:187px;margin-top: 0}
+
+  
+   div#textoSobre{width:40%;background: ;margin-top: 0}
+
+   #bordaNome{width:50%;margin:10px 0px;}
+
+   #textoSobre > h3{text-align: left;}
+
+   #textoSobre > p{font-size:0.9em}
 
 }
 
@@ -108,6 +151,10 @@ footer{width: 100%;height:600px;background:#000;margin-top: 50px;display: flex;a
 
   .galery img{width :350px}
 
+  #fotoSobre{width:33%;height:250px}
+
+  #bordaNome{width:30%}
+
   footer{flex-direction: row}
 
   #imgLogo{width:200px;height:200px}
@@ -115,8 +162,12 @@ footer{width: 100%;height:600px;background:#000;margin-top: 50px;display: flex;a
   #lista-de-servicos li{text-align:left;list-style:inherit;letter-spacing: 2px;line-height:2}
 
   #btnAgendar2{display: block;margin:0;}
+}
 
 
+@media(min-width:915px){
+
+   #sobre{width:82%}
 }
 
 
@@ -140,29 +191,52 @@ footer{width: 100%;height:600px;background:#000;margin-top: 50px;display: flex;a
 	#menu li:hover{background:#78031C;transition: 0.5s}
 
 
-    #filtroHeader{height: 450px}
+   #filtroHeader{height: 450px}
 
-    #capa{margin-top: 61px;height: 450px}
+   #capa{margin-top: 61px;height: 450px}
 
-    #titulo1 > h1{font-size:2.5rem}
+   #titulo1 > h1{font-size:2.5rem}
 
-    #titulo1 > p{font-size: 1rem}
+   #titulo1 > p{font-size: 1rem}
 
-    #btnAgendar{width:150px;padding:15px 0px;border-radius:;}
+   #btnAgendar{width:150px;padding:15px 0px;border-radius:;}
     
-    #btnAgendar:hover{background:linear-gradient(to left,#ABC8F8,pink);color:#F9337E;transition: 0.5s} 
+   #btnAgendar:hover{background:linear-gradient(to left,#ABC8F8,pink);color:#F9337E;transition: 0.5s} 
 
 
-    /*Galeria*/
+   /*Galeria*/
 
-    #container{max-width:900px}
+   #container{max-width:900px}
 
 
-    #imgLogo{width:250px;height:250px}
+   #imgLogo{width:250px;height:250px}
+
+   #fotoSobre{width:30%;height:300px;}
+
+  
+   div#textoSobre{width:40%;background: ;margin-top:50px;}
+
+   #textoSobre > p{font-size:1em;line-height: 1.6}
+
+   #bordaNome{width: 15%}
+}
+
+
+@media(min-width:1200px){
+
+   #sobre{width:70%}
+
+   #fotoSobre{width:30%;height:300px;}
+   
+   div#textoSobre{width:50%;margin-top:50px}
+
 }
 
 
 @media(min-width:1920px){
      
     main, #topo{width:1920px;margin: auto;}
+
+    #sobre{max-width:950px}
+
 }
