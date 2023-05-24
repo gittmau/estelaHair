@@ -25,7 +25,7 @@ body{background: #f4f4f4}
 
 #menu ul{width:70%;height:100vh;background:#1A1717;position: absolute;z-index: 1001;margin-top:81px}
 
-#menu  li{list-style: none;padding:20px;text-transform: uppercase;font-family: 'Raleway', sans-serif;color: #fff;font-size:0.8rem}
+#menu  li{list-style: none;padding:20px;text-transform:capitalize;font-family: 'Raleway', sans-serif;color: #fff;font-size:0.8rem}
 
 #menu a{text-decoration: none;}
 
